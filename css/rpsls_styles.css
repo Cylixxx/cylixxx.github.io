@@ -1,0 +1,218 @@
+/*
+    Author: 		Ryan Gilchrist
+    File name: 		rpsls_styles.css
+    Date Created:	10/10/2021
+    Date Updated:   10/10/2021
+    Version: 		0.5
+
+    Copyright: 
+        *********************************************************************** 
+        ***********************************************************************
+        ***********************************************************************
+    
+    Description:
+        Style page used for rpsls_game.html.
+    */
+html, body {
+    height: 100%;
+    width: 100%;  
+      background: url(../images/Neon-Sunset-Mountains.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  body {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0 auto;
+      max-width: 100;
+      min-height: 100%;
+      position: relative;
+      height: 500px;
+  }
+
+  main {
+      /* width: 100%; */
+      margin: auto;
+      /* justify-content: center; */
+      padding-top: 4px;
+      /* padding-bottom: 40px; */
+      min-height: 600px;
+  }
+  /*
+ * Project Styling
+ */
+
+ .game_section {
+    margin-top: 2%;
+    /* margin-left: 10%; */
+    /* margin-right: 15%; */
+    text-align: center;
+ }
+ .game_section p {
+     margin-top: 8%;
+     font-size: 30px;
+     color: whitesmoke;
+ }
+.rpsls_title {
+    color: black;
+    font-size: 30px;
+}
+.rpsls_title span {
+    color: whitesmoke;
+    font-size: 40px;
+}
+#rock {
+    background-image: url("../images/rock1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#paper {
+    background-image: url("../images/paper1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#scissors {
+    background-image: url("../images/scissors1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#lizard {
+    background-image: url("../images/lizard1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#spock {
+    background-image: url("../images/spock1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.rpsls_selections {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    margin-top: 8%;
+    max-width: 100%;
+}
+.rpsls_option {
+    background-color: whitesmoke;
+    border: black solid 4px;
+    /* text-align: center; */
+    border-radius: 40px;
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.rpsls_option:hover {
+    border: whitesmoke solid 6px;
+}
+#rpsls_results, #gameScore {
+    display: none;
+}
+#rpsls_results {
+    /* display: flex; */
+    flex-direction: column;
+    /* justify-content: center; */
+    /* vertical-align: middle; */
+    text-align: center;
+    margin-top: 4%;
+    max-width: 100%;
+    max-height: 100%;
+}
+.gameButtons {
+    justify-content: center;
+    text-align: center;
+    column-gap: 20px;
+    margin-top: 4%;
+    max-width: 100%;
+}
+#gameScore {
+    justify-content: center;
+    text-align: center;
+    column-gap: 20px;
+    margin-top: 4%;
+    max-width: 100%;
+}
+.theScore {
+    color: whitesmoke;
+    border: whitesmoke solid 6px;
+    border-radius: 20px;
+    font-size: 30px;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+.buttons {
+    font-weight: bold;
+    background-color: whitesmoke;
+    border: black solid 4px;
+    /* text-align: center; */
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+#goBack {
+    margin-top: 4%;
+}
+.currentScores {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+
+}
+.buttons:hover {
+    color: whitesmoke;
+    border-color: whitesmoke;
+    background-color: black;
+}
+#userText, #compText, #resultText {
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+#userSelection, #compSelection {
+    background-color: whitesmoke;
+    border: black solid 4px;
+    border-radius: 40px;
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+    width: 100px;
+    height: 100px;
+}
+/*
+ * Mobile Devices
+ */
+ @media only screen and (max-width: 1300px) {
+    #gameScore {
+        margin-top: 8%;
+    }
+    .theScore {
+        font-size: 25px;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+ }
+ @media only screen and (max-width: 800px) {
+    .rpsls_selections {
+        column-gap: 10px;
+        margin-top: 15%;
+    }
+    .rpsls_option {
+        max-width: 70px;
+        max-height: 70px;
+        border-radius: 30px;
+    }
+    #gameScore {
+        margin-top: 8%;
+    }
+    .theScore {
+        font-size: 20px;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+ }
