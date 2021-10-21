@@ -126,11 +126,20 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
+#side_bar ul li a:hover {
+    color: orange;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
 #projects_more {
     display: none;
 }
 #projects_more ul {
     padding-top: 0px;
+}
+#projects_more ul li a {
+    font-size: 15px;
 }
 
 /*
