@@ -2,7 +2,7 @@
     Author: 		Ryan Gilchrist
     File name: 		index_home.html
     Date Created:	10/05/2021
-    Date Updated:   10/10/2021
+    Date Updated:   10/21/2021
     Version: 		0.5
 
     Copyright: 
@@ -14,9 +14,9 @@
         Styling for page content.
     */
 html, body {
-  height: 100%;
-  width: 100%;  
-    background: url(../images/mountains-foggy-background.jpg);
+  height: auto;
+  width: 100%; 
+    background: url(../images/backgrounds/mountains-foggy-background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,9 +27,11 @@ body {
     max-width: 100;
     min-height: 100%;
     position: relative;
-    height: 500px;
+    /* height: 100%; */
 }
 header {
+    position: sticky;
+    top: 0;
     margin: auto;
     /* max-width: 100%; */
     height: 75px;
@@ -77,7 +79,7 @@ footer {
    margin-bottom: 20px;
    cursor: pointer;
 }
-.menu_icon {
+.open_menu {
    float: left;
    margin-left: 8%;
    margin-top: 20px;
@@ -85,11 +87,50 @@ footer {
    cursor: pointer;
    display: none;
 }
+.close_menu {
+    float: right;
+   margin-top: 10px;
+   margin-right: 10px;
+   /* margin-bottom: 20px; */
+   cursor: pointer;
+}
 
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
+}
+#side_bar {
+    display: none;
+    left: 0;
+    position: absolute;
+    /* right: 20%; */
+    /* top: 20%; */
+    width: 60%;
+    height: 2000%; /*Can change to more appropriate value*/
+    border: 2px solid black;
+    font-size: 20px;
+    z-index: 1;
+    background-color: white;
+}
+#side_bar ul {
+    padding-top: 50px;
+    list-style-type: none;
+}
+#side_bar ul li {
+    padding-top: 20px;
+    /* padding-left: 0px; */
+}
+#side_bar ul li a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#projects_more {
+    display: none;
+}
+#projects_more ul {
+    padding-top: 0px;
 }
 
 /*
@@ -117,7 +158,7 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
-.hamburger_menu:not(.menu_icon) {
+.hamburger_menu:not(.open_menu) {
     display: inline-block;
 }
 .ham {
@@ -180,7 +221,7 @@ footer {
     /* max-width: 100%; */
     min-height: 400px;
     color: whitesmoke;
-    background: url(../images/dark-background.jpg);
+    background: url(../images/backgrounds/dark-background.jpg);
  }
  .about_title {
      font-size: 30px;
@@ -204,7 +245,7 @@ footer {
     max-height: 200px;
  }
  .projects_section {
-    background: url(../images/mountains-sunset-background.jpg);
+    background: url(../images/backgrounds/mountains-sunset-background.jpg);
     margin-top: -30px;
     min-height: 400px;
     max-width: 100%;
@@ -255,7 +296,7 @@ footer {
     margin-top: -30px;
     min-height: 400px;
     color: whitesmoke;
-    background: url(../images/dark-background-textured.jpg);
+    background: url(../images/backgrounds/dark-background-textured.jpg);
     background-size: cover;
  }
  .contact_title {
@@ -300,7 +341,7 @@ footer {
 #navigation_bar a {
       display: none;
   }
-.menu_icon {
+.open_menu {
       display: inline-block;
   }
 .home_title {

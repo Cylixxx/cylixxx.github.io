@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
+    Author: 		Ryan Gilchrist
+    File name: 		index_home.html
+    Date Created:	10/05/2021
+    Date Updated:   10/21/2021
+    Version: 		1.0
+
+    Copyright: 
+        *********************************************************************** 
+        ***********************************************************************
+        ***********************************************************************
+    
+    Description:
+        Home page that is presented to user.
+    -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <!--Icons for social media platforms-->
+        <section class="social_icons">
+            <div class="linkedin_image">
+                <a href="https://www.linkedin.com/in/rygil/">
+                    <img src="/images/linkedin-icon.png" width="30px" height="30px" alt="Github Image">
+                </a>
+            </div>
+            <div class="github_image">
+                <a href="https://github.com/RyGil">
+                    <img src="/images/github-icon.png" width="30px" height="30px" alt="Github Image">
+                </a>
+            </div>
+        </section>
+
+        <!--Icon and menu for hamburger menu-->
+        <section class="side_menu">
+            <div class="open_menu">
+                <img id="open_icon" src="/images/ham-menu-icon.png" width="30px" height="30px"
+                    alt="Hamburger Menu Icon">
+            </div>
+            <div id="side_bar">
+                <div class="close_menu">
+                    <img id="close_icon" src="/images/close-icon.png" width="30px" height="30px"
+                        alt="Hamburger Menu Icon">
+                </div>
+                <ul id="menu_contents">
+                    <li><a id="home_menu">Home</a></li>
+                    <li><a id="about_menu">About</a></li>
+                    <li><a id="projects_menu">Projects</a></li>
+                    <div id="projects_more">
+                        <ul>
+                            <li><a href="/content/rpsls_game.html">Rock Paper Scissors Lizard Spock</a></li>
+                            <li><a href="#">Casino Craps</a></li>
+                            <li><a href="#">BlackJack</a></li>
+                            <li><a href="#">Tic Tac Toe</a></li>
+                        </ul>
+                    </div>
+                    <li><a id="contact_menu">Contact</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!--Main navigation links-->
+        <section id="navigation_bar">
+            <a id="home_nav">Home</a>
+            <a id="about_nav">About</a>
+            <a id="project_nav">Projects</a>
+            <a id="contact_nav">Contact</a>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!--Opening content presented upon webpage load-->
+        <section id="home">
+            <div class="home_title">
+                <h1>Hi, I'm Ryan Gilchrist.</h1>
+            </div>
+            <div class="home_info">
+                <h3>I'm a Hamilton based <span>Software Developer</span>. I have a passion for <span>Front-End</span>web
+                    development
+                    and <span>UI Design</span>. I'm currently a Sheridan College Student looking for opportunities to
+                    expand on my knowledge and skillset.</h3>
+            </div>
+
+            <!--Icon to take user to next section (about)-->
+            <div id="next_icon">
+                <img id="next_section" src="/images/down-arrow-icon.png" width="30px" height="30px">
+            </div>
+        </section>
+
+        <!--About section-->
+        <section id="about">
+            <div class="about_section">
+                <h3 class="about_title">About</h3>
+                <div class="about_content">
+                    <img src="/images/blackjack-icon.png">
+                    <p>Blah blah blah Blah blah blah Blah blah blah Blah blah blahBlah blah blah Blah blah blahBlah blah
+                        blah Blah blah blah
+                        Blah blah blah Blah blah blahBlah blah blah Blah blah blahBlah blah blah Blah blah blahBlah blah
+                        blah Blah blah blah
+                        Blah blah blah Blah blah blahBlah blah blah Blah blah blahBlah blah blah Blah blah blahBlah blah
+                        blah Blah blah blah
+                        Blah blah blah Blah blah blahBlah blah blah Blah blah blahBlah blah blah Blah blah blahBlah blah
+                        blah Blah blah blah
+                        Blah blah blah Blah blah blahBlah blah blah Blah blah blahBlah blah blah Blah blah blahBlah blah
+                        blah Blah blah blah
+                        Blah blah blah Blah blah blahBlah blah blah Blah blah blahBlah blah blah Blah blah blahBlah blah
+                        blah Blah blah blah
+                        Blah blah blah Blah blah blahBlah blah blah Blah blah blahBlah blah blah Blah blah blahBlah blah
+                        blah Blah blah blah</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Project section-->
+        <section id="projects">
+            <div class="projects_section">
+                <h3 class="projects_title">Projects</h3>
+                <div class="projects_content">
+                    <a href="/content/rpsls_game.html">
+                        <div class="rpsls_game">
+                            <figure>
+                                <img src="/images/rock-paper-scissors-icon.png">
+                                <figcaption>RPSLS</figcaption>
+                            </figure>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="cc_game">
+                            <figure>
+                                <img src="/images/cc-icon.png">
+                                <figcaption>Casino Craps</figcaption>
+                            </figure>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="blackjack_game">
+                            <figure>
+                                <img src="/images/blackjack-icon.png">
+                                <figcaption>BlackJack</figcaption>
+                            </figure>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="ttt_game">
+                            <figure>
+                                <img src="/images/tic-tac-toe-icon.png">
+                                <figcaption>Tic Tac Toe</figcaption>
+                            </figure>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--Contact details section-->
+        <section id="contact">
+            <div class="contact_section">
+                <h3 class="contact_title">Contact</h3>
+                <div class="contect_info">
+                    <img src="">
+                    <p>Blah blah blah Blah blah blah Blah blah blah Blah blah blahBlah blah blah Blah blah blahBlah blah
+                        blah Blah blah blah
+                        Blah blah blah Blah blah blahBlah blah blah Blah blah blahBlah blah blah Blah blah blahBlah blah
+                    </p>
+                </div>
+
+                <!--Icon to take user back to top of page-->
+                <div id="back_icon">
+                    <img id="goHome" src="/images/up-arrow-icon.png" width="30px" height="30px">
+                </div>
+            </div>
+        </section>
+    </main>
+    <aside>
+    </aside>
+    <footer>
+        <address>
+            Copyright &copy; 2021-2022 Ryan Gilchrist. All rights reserved.
+        </address>
+    </footer>
+
+    <!--JavaScript for page functionality-->
+    <script src="/js/main.js"></script>
+    <script src="/js/index.js"></script>
+
+</body>
+
+</html>

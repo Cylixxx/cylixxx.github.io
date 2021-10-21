@@ -2,7 +2,7 @@
     Author: 		Ryan Gilchrist
     File name: 		rpsls_styles.css
     Date Created:	10/10/2021
-    Date Updated:   10/10/2021
+    Date Updated:   10/21/2021
     Version: 		0.5
 
     Copyright: 
@@ -16,7 +16,7 @@
 html, body {
     height: 100%;
     width: 100%;  
-      background: url(../images/Neon-Sunset-Mountains.jpg);
+      background: url(../images/backgrounds/Neon-Sunset-Mountains.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;

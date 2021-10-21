@@ -9,7 +9,7 @@
     Author: 		Ryan Gilchrist
     File name: 		rpsls_game.html
     Date Created:	10/07/2021
-    Date Updated:   10/10/2021
+    Date Updated:   10/21/2021
     Version: 		1.0
 
     Copyright: 
@@ -26,33 +26,59 @@
 
 <body>
     <header>
+        <!--Icons for social media platforms-->
         <section class="social_icons">
             <div class="linkedin_image">
                 <a href="https://www.linkedin.com/in/rygil/">
-                    <img src="../images/linkedin-icon.png" width="30px" height="30px" alt="Github Image">
+                    <img src="/images/linkedin-icon.png" width="30px" height="30px" alt="Github Image">
                 </a>
             </div>
             <div class="github_image">
                 <a href="https://github.com/RyGil">
-                    <img src="../images/github-icon.png" width="30px" height="30px" alt="Github Image">
+                    <img src="/images/github-icon.png" width="30px" height="30px" alt="Github Image">
                 </a>
-            </div>
-
-
-            <div class="menu_icon">
-                <img src="../images/ham-menu-icon.png" width="30px" height="30px" alt="Hamburger Menu Icon">
             </div>
         </section>
 
+        <!--Icon and menu for hamburger menu-->
+        <section class="side_menu">
+            <div class="open_menu">
+                <img id="open_icon" src="/images/ham-menu-icon.png" width="30px" height="30px"
+                    alt="Hamburger Menu Icon">
+            </div>
+            <div id="side_bar">
+                <div class="close_menu">
+                    <img id="close_icon" src="/images/close-icon.png" width="30px" height="30px"
+                        alt="Hamburger Menu Icon">
+                </div>
+                <ul id="menu_contents">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a id="projects_menu">Projects</a></li>
+                    <div id="projects_more">
+                        <ul>
+                            <li><a href="/content/rpsls_game.html">Rock Paper Scissors Lizard Spock</a></li>
+                            <li><a href="#">Casino Craps</a></li>
+                            <li><a href="#">BlackJack</a></li>
+                            <li><a href="#">Tic Tac Toe</a></li>
+                        </ul>
+                    </div>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!--Main navigation links-->
         <section id="navigation_bar">
-            <a href="../content/index_home.html">Home</a>
-            <!-- <a id="about_page">About</a>
-            <a id="project_page">Projects</a>
-            <a id="contact_page">Contact</a> -->
+            <a href="../index.html">Home</a>
+            <a href="../index.html#about">About</a>
+            <a href="../index.html#projects">Projects</a>
+            <a href="../index.html#contact">Contact</a>
             </div>
         </section>
     </header>
     <main>
+        <!--Main Page Content-->
         <section class="game_section">
             <div id="start_content">
                 <h3 class="rpsls_title">Welcome to<br><span>Rock, Paper, Scissors, Lizard, Spock</span></h3>
@@ -66,6 +92,7 @@
                 </div>
             </div>
         </section>
+        <!--Results Content-->
         <section class="results_section">
             <div id="rpsls_results">
                 <p id="userText"></p>
@@ -80,17 +107,18 @@
                 </div>
             </div>
         </section>
+        <!--Scoreboard Content-->
         <section class="scoreboard">
             <div id="gameScore">
                 <div class="theScore">
-                <div class="currentScores">
-                    <p>User Score:</p>
-                    <p id="userScore"></p>
-                </div>
-                <div class="currentScores">
-                    <p>Comp Score:</p>
-                    <p id="compScore"></p>
-                </div>
+                    <div class="currentScores">
+                        <p>User Score:</p>
+                        <p id="userScore"></p>
+                    </div>
+                    <div class="currentScores">
+                        <p>Comp Score:</p>
+                        <p id="compScore"></p>
+                    </div>
                 </div>
                 <button type="button" id="goBack" class="buttons">Back</button>
             </div>
@@ -103,7 +131,9 @@
             Copyright &copy; 2021-2022 Ryan Gilchrist. All rights reserved.
         </address>
     </footer>
-    <script src="../js/rpsls_javascript.js"></script>
+    <!--JavaScript for page functionality-->
+    <script src="../js/main.js"></script>
+    <script src="../js/rpsls.js"></script>
 </body>
 
 </html>
