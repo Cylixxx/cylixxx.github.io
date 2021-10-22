@@ -16,7 +16,7 @@
 html, body {
   height: auto;
   width: 100%; 
-    background: url(../images/backgrounds/mountains-foggy-background.jpg);
+    background: url(../images/backgrounds/sunset-mountains.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -200,7 +200,17 @@ footer {
     margin-left: 15%;
     margin-right: 15%;
     text-align: center;
+    animation: fadeInText ease 5s;
+    animation-iteration-count: 1;
  }
+ @keyframes fadeInText { /*Fade in effect*/
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
 .home_title {
     color: black;
     font-size: 40px;

@@ -62,31 +62,31 @@ html, body {
     font-size: 40px;
 }
 #rock {
-    background-image: url("../images/rock1.png");
+    background-image: url("../images/icons/rock1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #paper {
-    background-image: url("../images/paper1.png");
+    background-image: url("../images/icons/paper1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #scissors {
-    background-image: url("../images/scissors1.png");
+    background-image: url("../images/icons/scissors1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #lizard {
-    background-image: url("../images/lizard1.png");
+    background-image: url("../images/icons/lizard1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #spock {
-    background-image: url("../images/spock1.png");
+    background-image: url("../images/icons/spock1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
