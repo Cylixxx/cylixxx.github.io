@@ -51,28 +51,28 @@ function userSelection() {
 
     rock.addEventListener('click', function () {
         playGame("ROCK");
-        userImg.src = "../images/icons/rock1.png";
+        userImg.src = "../images/icons/rock.png";
         userText.innerHTML = "You selected: ROCK";
     })
     paper.addEventListener('click', function () {
         playGame("PAPER");
-        userImg.src = "../images/icons/paper1.png";
+        userImg.src = "../images/icons/paper.png";
         userText.innerHTML = "You selected: PAPER";
     })
     scissors.addEventListener('click', function () {
         playGame("SCISSORS");
         userChoice = scissors;
-        userImg.src = "../images/icons/scissors1.png";
+        userImg.src = "../images/icons/scissors.png";
         userText.innerHTML = "You selected: SCISSORS";
     })
     lizard.addEventListener('click', function () {
         playGame("LIZARD");
-        userImg.src = "../images/icons/lizard1.png";
+        userImg.src = "../images/icons/lizard.png";
         userText.innerHTML = "You selected: LIZARD";
     })
     spock.addEventListener('click', function () {
         playGame("SPOCK");
-        userImg.src = "../images/icons/spock1.png";
+        userImg.src = "../images/icons/spock.png";
         userText.innerHTML = "You selected: SPOCK";
     })
 }
@@ -84,15 +84,15 @@ function playGame(userSelection) {
     const computerSelection = choices[randomSelection];
 
     if (computerSelection == "ROCK") {
-        compImg.src = "../images/icons/rock1.png";
+        compImg.src = "../images/icons/rock.png";
     } else if (computerSelection == "PAPER") {
-        compImg.src = "../images/icons/paper1.png";
+        compImg.src = "../images/icons/paper.png";
     } else if (computerSelection == "SCISSORS") {
-        compImg.src = "../images/icons/scissors1.png";
+        compImg.src = "../images/icons/scissors.png";
     } else if (computerSelection == "LIZARD") {
-        compImg.src = "../images/icons/lizard1.png";
+        compImg.src = "../images/icons/lizard.png";
     } else {
-        compImg.src = "../images/icons/spock1.png";
+        compImg.src = "../images/icons/spock.png";
     }
     console.log("Computer chose: " + computerSelection)
     compText.innerHTML = "Computer selected: " + computerSelection;
